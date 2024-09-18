@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    height: 100%; 
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+header, footer, section {
+    width: 100%; 
+}
+
+nav ul {
+    list-style: none;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about-me {
+    width: 70%;
+}
+
+.about-me h1, .hobby h2 {
+    color: #333;
+}
+
+#hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.hobby {
+    flex: 1 0 21%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 1%;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-height: 150px;
+}
+
+@media (max-width: 800px) {
+    .hobby {
+        flex: 1 0 46%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hobby {
+        flex: 1 0 100%;
+    }
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#contact h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form, .social-media {
+    flex: 1 0 45%;
+    margin: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+    position: relative;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    margin: 5px 0;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto; 
+}
